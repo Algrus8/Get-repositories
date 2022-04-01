@@ -16,10 +16,7 @@ async function searchRepo(value) {
   if (!input.value) {
     return;
   }
-  const octokit = await new Octokit({
-    auth: `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`,
-  });
-
+  const octokit = await new Octokit({});
   const response = await octokit.request("GET /search/repositories", {
     q: input.value,
     per_page: 5,
