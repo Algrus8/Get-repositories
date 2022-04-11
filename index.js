@@ -61,7 +61,7 @@ function addChosen(response) {
   searchList.style.display = "none";
 }
 
-input.addEventListener("keyup", () => {
+input.addEventListener("input", () => {
   debounceSearch();
 });
 
